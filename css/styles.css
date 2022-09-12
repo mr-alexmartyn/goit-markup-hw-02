@@ -66,6 +66,21 @@
   background-color: #2196f3;
 }
 
+.btn.primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.btn.secondary {
+  color: var(--title-text-color);
+  background-color: var(--team-bgd-color);
+}
+
+.btn.secondary:hover,
+.btn.secondary:active {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
 /* Our Features */
 
 .visually-hidden {
