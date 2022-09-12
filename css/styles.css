@@ -117,6 +117,10 @@
   background-color: var(--bgd-color);
 }
 
+.footer-logo {
+  color: var(--white-color);
+}
+
 .contact-adress .map {
   color: var(--white-color);
 }
