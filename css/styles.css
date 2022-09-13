@@ -1,87 +1,25 @@
 :root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --bgd-color: #2f303a;
-  --white-color: #ffffff;
-  --transparent-white-color: rgba(255, 255, 255, 0.6);
-  --team-bgd-color: #f5f4fa;
+  --primary-text-color: #757575; /* цвет вторичного текста */
+  --title-text-color: #212121; /* вторичнй цвет бренда  (и текста) */
+  --accent-color: #2196f3; /* основной цвет бренда */
+  --bgd-color: #2f303a; /* цвет фона */
+  --white-color: #ffffff; /* белый цвет на сайте */
+  --transparent-white-color: rgba(255, 255, 255, 0.6); /* цвет текста в футере (с прозрачностью */
+  --team-bgd-color: #f5f4fa; /* цвет фона на секциях */
 }
 
-/* body {
-  background-color: #f5f5f5;
-} */
-
-.site-header {
-  background-color: var(--white-color);
+body {
+  font-family: Roboto, normal;
 }
 
-.logo {
-  color: var(--title-text-color);
+.button {
 }
-/* .logo:hover,
-.logo:active {
-  color: var(--accent-color);
-}
- */
-.logo-text {
-  color: var(--accent-color);
-}
-
-/* Site nav */
-
-.site-nav .link {
-  color: var(--title-text-color);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-
-.contacts .link {
-  color: var(--primary-text-color);
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--accent-color);
-}
-
-/* Hero */
-.hero {
-  background-color: var(--bgd-color);
-}
-
-.hero-title {
-  color: #ffffff;
-}
-
-.btn {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
-.btn.primary {
-  color: var(--white-color);
+.button-primary {
   background-color: var(--accent-color);
-}
-
-.btn.secondary {
-  color: var(--title-text-color);
-  background-color: var(--team-bgd-color);
-}
-
-.btn.secondary:hover,
-.btn.secondary:active {
   color: var(--white-color);
-  background-color: var(--accent-color);
 }
-/* Our Features */
+.button.secondary {
+}
 
 .visually-hidden {
   position: absolute;
@@ -90,63 +28,213 @@
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.feature-list .title {
+/* ----------------------HEADER----------------------- */
+
+/* .header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
+} */
+
+.header-navigation {
 }
 
-.feature-list .text {
+.logo {
+  font-family: Raleway, normal;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.header-logo-text {
+  color: var(--title-text-color);
+}
+.header-navigation-list {
+  list-style-type: none;
+}
+
+/* .header-navigation-item {
+} */
+.header-navigation-link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.header-contact-list {
+  list-style-type: none;
+}
+
+.mail-link,
+.tel-link {
+  text-decoration: none;
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-/* Our`s work */
-.work-list .title {
+.header-navigation-link:hover,
+.header-navigation-link:focus,
+.mail-link:hover,
+.mail-link:focus,
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+
+/* --------------------HERO------------------------ */
+.hero {
+  background-color: var(--bgd-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  text-transform: uppercase; /* Понимаю что возможно рано, но что бы не прописывать вручную + об этом Андрей говорил в лекции*/
+}
+
+/* ---------------------FEATURES----------------------- */
+
+.feature {
+}
+
+.feature-list {
+  list-style-type: none;
+}
+
+.feature-list-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-/* Our Team */
+.feature-list-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ----------------------OUR WORK---------------------------- */
+.work {
+}
+
+.work-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.work-list {
+  list-style-type: none;
+}
+
+/* -----------------------------OUR TEAM---------------------------------- */
+
 .our-team {
   background-color: var(--team-bgd-color);
 }
-.our-team title {
+
+.our-team-list {
+  list-style-type: none;
+}
+
+.our-team-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .teammate-name {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 .teammate-profession {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
-/* Footer */
+/* ----------------------------------FOOTER----------------------------- */
 
-.site-footer {
+.footer {
   background-color: var(--bgd-color);
 }
 
-.footer-logo {
+.footer-logo-text {
   color: var(--white-color);
 }
 
-.contact-adress .map {
-  color: var(--white-color);
+.footer-adress {
 }
 
-.footer-contact {
+.footer-adress-list {
+  list-style-type: none;
+}
+
+.footer-adress-map {
+  font-style: normal;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-adress-mail,
+.footer-adress-tel {
+  font-style: normal;
   color: var(--transparent-white-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.contact-adress .map:hover,
-.contact-adress .map:focus,
-.footer-contact:hover,
-.footer-contact:focus {
+.footer-adress-map:hover,
+.footer-adress-map:focus,
+.footer-adress-mail:hover,
+.footer-adress-mail:focus,
+.footer-adress-tel:hover,
+.footer-adress-tel:focus {
   color: var(--accent-color);
 }
