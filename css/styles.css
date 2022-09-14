@@ -2,6 +2,7 @@
   --primary-text-color: #757575; /* цвет вторичного текста */
   --title-text-color: #212121; /* вторичнй цвет бренда  (и текста) */
   --accent-color: #2196f3; /* основной цвет бренда */
+  --black-color: #000000; /* Черный цвет на сайте */
   --bgd-color: #2f303a; /* цвет фона */
   --white-color: #ffffff; /* белый цвет на сайте */
   --transparent-white-color: rgba(255, 255, 255, 0.6); /* цвет текста в футере (с прозрачностью */
@@ -9,7 +10,7 @@
 }
 
 body {
-  font-family: Roboto, normal;
+  font-family: Roboto, sans-serif;
 }
 
 .button {
@@ -17,8 +18,16 @@ body {
 .button-primary {
   background-color: var(--accent-color);
   color: var(--white-color);
+  cursor: pointer;
 }
-.button.secondary {
+.button-secondary {
+  background-color: var(--team-bgd-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -36,14 +45,6 @@ body {
 
 /* ----------------------HEADER----------------------- */
 
-/* .header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-} */
-
 .header-navigation {
 }
 
@@ -58,7 +59,7 @@ body {
 }
 
 .header-logo-text {
-  color: var(--title-text-color);
+  color: var(--black-color);
 }
 .header-navigation-list {
   list-style-type: none;
@@ -237,4 +238,48 @@ body {
 .footer-adress-tel:hover,
 .footer-adress-tel:focus {
   color: var(--accent-color);
+}
+
+/* ------------------------------------------------------------------------- */
+/* ---------------------------------PORTFOLIO------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+.portfolio {
+}
+
+.filter-list {
+  list-style-type: none;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.work-portfolio {
+}
+
+.portfolio-list {
+  list-style-type: none;
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
