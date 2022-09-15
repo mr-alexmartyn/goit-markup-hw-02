@@ -7,18 +7,30 @@
   --white-color: #ffffff; /* белый цвет на сайте */
   --transparent-white-color: rgba(255, 255, 255, 0.6); /* цвет текста в футере (с прозрачностью */
   --team-bgd-color: #f5f4fa; /* цвет фона на секциях */
+  --border-color-cards: #eeeeee; /* Цвет рамок карточек*/
+  --border-color-main: #ececec; /* цвет основных рамок */
 }
 
 body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .button {
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
 }
-.button-primary {
+.button-hero {
   background-color: var(--accent-color);
   color: var(--white-color);
-  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 .button-secondary {
   background-color: var(--team-bgd-color);
@@ -27,7 +39,6 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .visually-hidden {
@@ -129,18 +140,12 @@ body {
 .feature-list-title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .feature-list-text {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* ----------------------OUR WORK---------------------------- */
@@ -174,7 +179,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
 }
 
 .teammate-name {
@@ -182,15 +186,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 
 .teammate-profession {
-  color: var(--primary-text-color);
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 
 /* ----------------------------------FOOTER----------------------------- */
@@ -214,10 +214,7 @@ body {
   font-style: normal;
   color: var(--white-color);
   text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .footer-adress-mail,
@@ -225,10 +222,7 @@ body {
   font-style: normal;
   color: var(--transparent-white-color);
   text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .footer-adress-map:hover,
@@ -255,13 +249,6 @@ body {
 .button-secondary:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-}
-
-.work-portfolio {
 }
 
 .portfolio-list {
@@ -277,9 +264,6 @@ body {
 }
 
 .portfolio-text {
-  color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
+  line-height: 1.87;
 }
