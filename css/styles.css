@@ -9,13 +9,13 @@
   --team-bgd-color: #f5f4fa; /* цвет фона на секциях */
   --border-color-cards: #eeeeee; /* Цвет рамок карточек*/
   --border-color-main: #ececec; /* цвет основных рамок */
+  --active-button-background: #188ce8; /* цвет активности главной кнопки */
 }
 
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -128,6 +128,11 @@ body {
   text-transform: uppercase; /* Понимаю что возможно рано, но что бы не прописывать вручную + об этом Андрей говорил в лекции*/
 }
 
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--active-button-background);
+}
+
 /* ---------------------FEATURES----------------------- */
 
 .feature {
@@ -140,6 +145,7 @@ body {
 .feature-list-title {
   color: var(--title-text-color);
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
